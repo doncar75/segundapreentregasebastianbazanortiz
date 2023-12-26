@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(121, 83, 179, 0.464)
+    
+}
+
+.header {
+    background-image: url(../img/twitter_header_1500x500.png);
+    height: 60vh;
+    background-repeat: no-repeat;
+
+}
+.navbar-header li {
+    display: inline-block;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 90px 60px;
+}
+
+.navbar-header a {
+
+    text-decoration: none;
+    color: rgb(152, 251, 229);
+    
+}
+
+.parrafo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+}   
+
+.footer {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    font-size: .75rem;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+
+}
+
+.form {
+
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 0;
+}
+
+.submit {
+    padding-inline: 1rem;
+    border: 0;
+    border-radius: 0;
+}
+
+.content {
+    max-width: 1170px;
+
+}
+
+.logo {
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 1.25rem 0 rgba(88, 54, 138, 0.464);
+}
+
+.contact-wrapper > *{
+    padding: 2rem;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+.contact-form form p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7rem;
+    border: none;
+}
+
+.contact-form form button {
+    background: rgb(165, 148, 243);
+
+}
+
+.info-contacto {
+    background-color: rgb(48, 58, 44);
+    color: white;
+}
+
+.info-contacto h4,
+.info-contacto ul,
+.info-contacto p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.info-contacto ul{
+    list-style: none;
+    padding: 0;
+}
+
+.info-contacto ul li {
+    padding: .3rem;
+}
+
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+
+}
+
+.parrafoadopcion{
+    display: flex;
+    padding: 2rem 1rem;
+    margin:2rem 2rem ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    border: darkslategray;
+    border-style: solid;
+    border-radius:10px ;
+    background-color: rgba(91, 148, 117, 0.854);
+    
+}
+
+.grilla {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "MercadoPago"
+    "BancoFrances"
+    "Uala";
+
+    justify-items: stretch;
+    align-items: stretch;
+
+
+
+}
+
+.ml {
+    background-color: white;
+    background-image: url(../img/logomp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: Mercado Pago;
+    
+}
+
+.bbva{
+    background-color: blue;
+    background-image: url(../img/logobbva.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: Banco Frances;
+}
+
+.Uala {
+    background-color: white;
+    background-image: url(../img/logouala.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: Uala;
+}
+.boton{
+    background-color: violet;
+    border: darkviolet;
+    border-style: double;
+}
